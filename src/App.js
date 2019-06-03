@@ -97,9 +97,9 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      // const response = await fetch('https://api.tronalddump.io/random/quote');
+      const response = await fetch('https://api.tronalddump.io/random/quote');
       // For localhost
-      const response = await fetch('random/quote');
+      // const response = await fetch('random/quote');
       const responseData = await response.json();
       setData(responseData);
     };
