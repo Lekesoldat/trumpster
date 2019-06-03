@@ -1,2 +1,1 @@
-
-Access-Control-Allow-Origin: https://api.tronalddump.io
+Access-Control-Allow-Origin: *
