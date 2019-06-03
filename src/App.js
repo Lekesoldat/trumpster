@@ -97,7 +97,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('/random/quote');
+      const response = await fetch('https://api.tronalddump.io/random/quote');
       const responseData = await response.json();
       setData(responseData);
     };
@@ -132,7 +132,7 @@ const App = () => {
       </BlockQuote> */}
 
       <Tweet>
-        <TwitterTweetEmbed tweetId={String(id)} cards='hidden' />
+        <TwitterTweetEmbed tweetId={String(id)} data-cards='hidden' />
       </Tweet>
     </>
   );
